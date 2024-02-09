@@ -25,7 +25,7 @@ cd yay-bin
 yes | makepkg -si
 
 cd "$(mktemp -d /tmp/bunny-prompt_XXXXXX)"
-curl https://github.com/TheBunnyMan123/bunny-prompt/releases/latest/download/PKGBUILD -o PKGBUILD
+curl -L https://github.com/TheBunnyMan123/bunny-prompt/releases/latest/download/PKGBUILD -o PKGBUILD
 yes | makepkg -si
 
 yes "" | yay -Syu peazip
