@@ -35,3 +35,5 @@ yes | sudo pacman -R gnome-console
 sudo mkdir -p /usr/local/share/gnome-terminal-symlink/
 sudo curl https://gist.githubusercontent.com/TheBunnyMan123/08d10eeea24a00fec46c926aaa484482/raw/gterm-alacritty.sh -o /usr/local/share/gnome-terminal-symlink/gterm-alacritty.sh
 sudo ln /usr/local/share/gnome-terminal-symlink/gterm-alacritty.sh /usr/local/bin/gnome-terminal
+sudo chmod 755 /usr/local/share/gnome-terminal-symlink/gterm-alacritty.sh
+sudo chmod 755 /usr/local/bin/gnome-terminal
