@@ -10,7 +10,7 @@ TMPDIR=$(mktemp -d /tmp/XXXXXX)
 yes "" | sudo pacman -Syu --needed keepassxc noto-fonts noto-fonts-cjk noto-fonts-emoji noto-fonts-extra alacritty file-roller dotnet-sdk-8.0 jdk17-openjdk git tmux neovim nerd-fonts firefox-developer-edition -y
 git clone https://github.com/TheBunnyMan123/dotfiles $TMPDIR
 rm -fr $TMPDIR/.git*
-cp -R $TMPDIR/* ~
+cp -R $TMPDIR ~
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
 curl https://gist.githubusercontent.com/TheBunnyMan123/75836ec00a99834184db2dc383da58a7/raw/.bashrc -o ~/.bashrc
