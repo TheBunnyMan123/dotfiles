@@ -14,11 +14,6 @@ cd $TMPDIR
 cp -R . ~
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
-curl https://gist.githubusercontent.com/TheBunnyMan123/75836ec00a99834184db2dc383da58a7/raw/.bashrc -o ~/.bashrc
-curl https://gist.githubusercontent.com/TheBunnyMan123/75836ec00a99834184db2dc383da58a7/raw/.bash_profile -o ~/.bash_profile
-curl https://gist.githubusercontent.com/TheBunnyMan123/75836ec00a99834184db2dc383da58a7/raw/fonts.conf -o ~/.config/fontconfig/fonts.conf
-curl https://gist.githubusercontent.com/TheBunnyMan123/75836ec00a99834184db2dc383da58a7/raw/alacritty.toml -o ~/.config/alacritty/alacritty.conf
-
 curl -LO --output-dir ~/.config/alacritty https://github.com/catppuccin/alacritty/raw/main/catppuccin-macchiato.toml
 
 cd "$(mktemp -d /tmp/yayXXXXXX)"
